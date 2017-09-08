@@ -12,6 +12,7 @@
 	<files>
 		<filename module="mod_nx-vidmebox">mod_nx-vidmebox.php</filename>
 		<folder>tmpl</folder>
+		<folder>models</folder>
 		<folder>language</folder>
 		<filename>helper.php</filename>
 	</files>
@@ -22,12 +23,10 @@
 		<language tag="de-DE">de-DE/de-DE.mod_nx-vidmebox.sys.ini</language>
 		<language tag="de-CH">de-DE/de-DE.mod_nx-vidmebox.ini</language>
 		<language tag="de-CH">de-DE/de-DE.mod_nx-vidmebox.sys.ini</language>
-		<language tag="de-AT">de-DE/de-DE.mod_nx-vidmebox.ini</language>
-		<language tag="de-AT">de-DE/de-DE.mod_nx-vidmebox.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
-			<fieldset name="basic">
+			<fieldset name="basic" addfieldpath="/modules/mod_nx-vidmebox/models/fields">
 				
 				<field name="id" type="text" label="MOD_NXVB_VID_LBL" description="MOD_NXVB_VID_DESC" default="" hint="https://vid.me/12J3Y"/>
 
