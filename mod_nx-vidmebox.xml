@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>MOD_NXVB_TITLE</name>
+	<author>Rensch Marco</author>
+	<creationDate>January 2017</creationDate>
+	<copyright>Copyright (C) 2010 - 2017 nx-designs. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@nx-designs.ch</authorEmail>
+	<authorUrl>www.nx-designs.ch</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_NXVB_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_nx-vidmebox">mod_nx-vidmebox.php</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<filename>helper.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_nx-vidmebox.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_nx-vidmebox.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_nx-vidmebox.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_nx-vidmebox.sys.ini</language>
+		<language tag="de-CH">de-DE/de-DE.mod_nx-vidmebox.ini</language>
+		<language tag="de-CH">de-DE/de-DE.mod_nx-vidmebox.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				
+				<field name="id" type="text" label="MOD_NXVB_VID_LBL" description="MOD_NXVB_VID_DESC" default="" hint="https://vid.me/12J3Y"/>
+
+				<field name="loop" type="radio" default="1" label="MOD_NXVB_LOOP_LBL" description="MOD_NXVB_LOOP_DESC" class="btn-group btn-group-yesno">
+  					<option value="1">JYES</option>
+  					<option value="0">JNO</option>
+				</field>
+				<field name="mute" type="radio" default="0" label="MOD_NXVB_MUTE_LBL" description="MOD_NXVB_MUTE_DESC" class="btn-group btn-group-yesno">
+  					<option value="1">JYES</option>
+  					<option value="0">JNO</option>
+				</field>
+
+				<field type="spacer" name="visualsettingsspacer" label="MOD_NXVB_VOPTIONS_TIT" />
+				<field type="spacer" name="visualsettingsintro" label="MOD_NXVB_VOPTIONS_DESC" />
+
+				
+				<field name="cornerradius" type="text" default="4px" label="MOD_NXVB_CORNERRAD_LBL" description="MOD_NXVB_CORNERRAD_DESC" hint="6px" />
+
+				<field type="spacer" name="outershadowsettingsspacer" label="MOD_NXVB_OUTERSHADOW_TIT" />
+				<field name="enableoutershadow" type="radio" default="0" label="MOD_NXVB_USEOUTERSHADOW_LBL" description="MOD_NXVB_USEOUTERSHADOW_DESC" class="btn-group btn-group-yesno">
+  					<option value="1">JYES</option>
+  					<option value="0">JNO</option>
+				</field>
+				<field name="outershadowcolor" showon="enableoutershadow:1" type="nxColor" format="rgba" default="rgba(100,100,100, 0.7)" label="MOD_NXVB_OUTERSHADOWCOLOR_LBL" description="MOD_NXVB_OUTERSHADOWCOLOR_DESC" />
+				<field name="outershadowhoffset" showon="enableoutershadow:1" type="text" default="4" label="MOD_NXVB_OUTERSHADOWHOFFSET_LBL" description="MOD_NXVB_OUTERSHADOWHOFFSET_DESC" hint="Value in Pixels" filter="integer"/>
+				<field name="outershadowvoffset" showon="enableoutershadow:1" type="text" default="4" label="MOD_NXVB_OUTERSHADOWVOFFSET_LBL" description="MOD_NXVB_OUTERSHADOWVOFFSET_DESC" hint="Value in Pixels" filter="integer"/>
+				<field name="outershadowblurradius" showon="enableoutershadow:1" type="text" default="4" label="MOD_NXVB_OUTERSHADOWBLUR_LBL" description="MOD_NXVB_OUTERSHADOWBLUR_DESC" hint="Value in Pixels" filter="integer"/>
+				<field name="outershadowspreadradius" showon="enableoutershadow:1" type="text" default="0" label="MOD_NXVB_OUTERSHADOWSPREAD_LBL" description="MOD_NXVB_OUTERSHADOWSPREAD_DESC" hint="Value in Pixels" filter="integer"/>
+<!-- #### Border Settings -->
+				<field type="spacer" name="bordersettingsspacer" label="MOD_NXVB_BORDERS_TIT" />
+				<field name="enableborders" type="radio" default="0" label="MOD_NXVB_ENABLEBORDERS_LBL" description="MOD_NXVB_ENABLEBORDERS_DESC" class="btn-group btn-group-yesno">
+  					<option value="1">JYES</option>
+  					<option value="0">JNO</option>
+				</field>
+				<field name="enableadvancedborders" showon="enableborders:1" type="radio" default="0" label="MOD_NXVB_ENABLEADVBORDERS_LBL" description="MOD_NXVB_ENABLEADVBORDERS_DESC" class="btn-group btn-group-yesno">
+  					<option value="1">JYES</option>
+  					<option value="0">JNO</option>
+				</field>
+				<field name="borderwidth" showon="enableborders:1" type="text" label="MOD_NXVB_BORDERSWIDTH_LBL" description="MOD_NXVB_BORDERSWIDTH_DESC" default="" hint="4px 2px 3px 1px"/>
+				<field name="bordercolor" showon="enableborders:1[AND]enableadvancedborders:0"  type="nxColor" format="rgba" default="rgba(100,100,100, 0.7)" label="MOD_NXVB_BORDERDEFCOLOR_LBL" description="MOD_NXVB_BORDERDEFCOLOR_DESC" />
+				<field name="bordercolortop" showon="enableborders:1[AND]enableadvancedborders:1"  type="nxColor" format="rgba" default="rgba(0,0,0, 0.7)" label="MOD_NXVB_BORDERTCOLOR_LBL" description="MOD_NXVB_BORDERTCOLOR_DESC" />
+				<field name="bordercolorright" showon="enableborders:1[AND]enableadvancedborders:1"  type="nxColor" format="rgba" default="rgba(0,0,0, 0.7)" label="MOD_NXVB_BORDERRCOLOR_LBL" description="MOD_NXVB_BORDERRCOLOR_DESC" />
+				<field name="bordercolorbottom" showon="enableborders:1[AND]enableadvancedborders:1"  type="nxColor" format="rgba" default="rgba(0,0,0, 0.7)" label="MOD_NXVB_BORDERBCOLOR_LBL" description="MOD_NXVB_BORDERBCOLOR_DESC" />		
+				<field name="bordercolorleft" showon="enableborders:1[AND]enableadvancedborders:1"  type="nxColor" format="rgba" default="rgba(0,0,0, 0.7)" label="MOD_NXVB_BORDERLCOLOR_LBL" description="MOD_NXVB_BORDERLCOLOR_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="debug" type="radio" default="0" label="MOD_NXVB_DEBUG_LBL" description="MOD_NXVB_DEBUG_DESC" class="btn-group btn-group-yesno">
+  					<option value="1">JYES</option>
+  					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+	    <server type="extension" name="nx-vidmeBox" priority="1">http://update.nx-designs.ch/updates/nx-vidmeBox_update.xml</server>
+	</updateservers>
+</extension>
+
+
+
