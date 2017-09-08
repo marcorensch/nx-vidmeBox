@@ -22,6 +22,8 @@
 		<language tag="de-DE">de-DE/de-DE.mod_nx-vidmebox.sys.ini</language>
 		<language tag="de-CH">de-DE/de-DE.mod_nx-vidmebox.ini</language>
 		<language tag="de-CH">de-DE/de-DE.mod_nx-vidmebox.sys.ini</language>
+		<language tag="de-AT">de-DE/de-DE.mod_nx-vidmebox.ini</language>
+		<language tag="de-AT">de-DE/de-DE.mod_nx-vidmebox.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
@@ -37,9 +39,6 @@
   					<option value="1">JYES</option>
   					<option value="0">JNO</option>
 				</field>
-
-				<field type="spacer" name="visualsettingsspacer" label="MOD_NXVB_VOPTIONS_TIT" />
-				<field type="spacer" name="visualsettingsintro" label="MOD_NXVB_VOPTIONS_DESC" />
 
 				
 				<field name="cornerradius" type="text" default="4px" label="MOD_NXVB_CORNERRAD_LBL" description="MOD_NXVB_CORNERRAD_DESC" hint="6px" />
