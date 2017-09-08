@@ -2,11 +2,11 @@
 ## Overview
 Simple Joomla! Module to display Videos from vid.me
 
-This Joomla! 3.x Module allows you to display vid.me Videos directly in your Joomla! Website. Even if it is a simple Solution, the Module is Fully Responsive and offers you additional options like:
+This Joomla! 3.x Module allows you to display vid.me Videos directly in your Joomla! Website. Even if it is a simple Solution, the Module offers you options like:
 <ul>
-<li>Fully Responsive</li>
+  <li><b>Fully Responsive</b></li>
 <li>Multiple Instances per Page possible</li>
-<li>Corner Radius Setting</li>
+<li>Corner Radius Option</li>
 <li>Border Option</li>
 <li>Box Shadow Option</li>
 </ul>
