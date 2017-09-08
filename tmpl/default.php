@@ -23,9 +23,6 @@ if($player['styling']['BlockLayer']['UseBlockLayer']){
 	include __DIR__ .'/css/nx-blocklayer.css.php';
 }
 ?>
-<script>
-
-</script>
 
 <div id="nx-player_<?php echo $rndm;?>_outer" class="nx-vidmebox">
 	<div id="" class="nx-outer">
