@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.1" client="site" method="upgrade">
-	<name>MOD_NXVB_TITLE</name>
+	<name>nx-vid.me Box</name>
 	<author>Rensch Marco</author>
 	<creationDate>January 2017</creationDate>
 	<copyright>Copyright (C) 2010 - 2017 nx-designs. All rights reserved.</copyright>
