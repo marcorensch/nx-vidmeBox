@@ -1,4 +1,7 @@
 # nx-vidmeBox
+
+# Archived and not longer under developement because of the ShutDown of vid.Me in December 2017
+
 ## Overview
 Simple Joomla! Module to display Videos from vid.me
 
